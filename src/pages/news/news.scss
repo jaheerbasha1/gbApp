@@ -1,0 +1,31 @@
+page-news {
+    .card-background-page {
+    ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: rgb(0, 0, 0);
+      }
+      .read-more{
+        margin-left: auto;
+        //margin-right: auto;
+        display: block !important;
+        font-size: 1.0em;
+}
+    }
+}
