@@ -5,23 +5,24 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { AuthorizePgPage } from '../pages/authorize-pg/authorize-pg';
 import { NewsPage } from '../pages/news/news';
 import { MgrssPage } from '../pages/mgrss/mgrss';
 import { EmpssPage } from '../pages/empss/empss';
-import { MenuPage } from '../pages/menu/menu';
+import { LeavehistoryPage } from '../pages/leavehistory/leavehistory';
+import { NewleavePage } from '../pages/newleave/newleave';
+import { LeavetabsPage } from '../pages/leavetabs/leavetabs';
+import { LeaveHistoryService } from '../pages/services/leaveHistory';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    AuthorizePgPage,
     NewsPage,
     MgrssPage,
     EmpssPage,
-    MenuPage
+    LeavehistoryPage,
+    NewleavePage,
+    LeavetabsPage
   ],
   imports: [
     BrowserModule,
@@ -30,17 +31,18 @@ import { MenuPage } from '../pages/menu/menu';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    AuthorizePgPage,
     NewsPage,
     MgrssPage,
     EmpssPage,
-    MenuPage
+    LeavehistoryPage,
+    NewleavePage,
+    LeavetabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    LeaveHistoryService
   ]
 })
 export class AppModule {}

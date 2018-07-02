@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LeavetabsPage } from '../leavetabs/leavetabs';
 
 /**
  * Generated class for the EmpssPage page.
@@ -29,5 +30,6 @@ export class EmpssPage {
 ];
 itemSelected(item: string) {
   console.log("Selected Item", item);
+  this.navCtrl.push(LeavetabsPage);
 }
 }
