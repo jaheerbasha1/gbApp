@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HTTP } from '@ionic-native/http';
 
 import { MyApp } from './app.component';
 import { NewsPage } from '../pages/news/news';
@@ -13,6 +14,7 @@ import { NewleavePage } from '../pages/newleave/newleave';
 import { LeavetabsPage } from '../pages/leavetabs/leavetabs';
 import { LeaveHistoryService } from '../pages/services/leaveHistory';
 import { SigninPage } from '../pages/signin/signin';
+import { AuthService } from '../pages/services/auth';
 
 
 @NgModule({
@@ -45,7 +47,7 @@ import { SigninPage } from '../pages/signin/signin';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LeaveHistoryService
+    LeaveHistoryService,HTTP,AuthService
   ]
 })
 export class AppModule {}
