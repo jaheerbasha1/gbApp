@@ -21,10 +21,17 @@ export class LeavehistoryPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeavehistoryPage');
+
   }
 
   private loadItems(){
     this.listItems = this.nlService.getItems();
+    
   }
+
+  getTime(){
+    
+  }
+  
 
 }

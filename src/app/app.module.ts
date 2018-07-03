@@ -12,6 +12,7 @@ import { LeavehistoryPage } from '../pages/leavehistory/leavehistory';
 import { NewleavePage } from '../pages/newleave/newleave';
 import { LeavetabsPage } from '../pages/leavetabs/leavetabs';
 import { LeaveHistoryService } from '../pages/services/leaveHistory';
+import { SigninPage } from '../pages/signin/signin';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LeaveHistoryService } from '../pages/services/leaveHistory';
     EmpssPage,
     LeavehistoryPage,
     NewleavePage,
-    LeavetabsPage
+    LeavetabsPage,
+    SigninPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { LeaveHistoryService } from '../pages/services/leaveHistory';
     EmpssPage,
     LeavehistoryPage,
     NewleavePage,
-    LeavetabsPage
+    LeavetabsPage,
+    SigninPage
   ],
   providers: [
     StatusBar,

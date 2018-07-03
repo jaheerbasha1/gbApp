@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+      <ion-buttons left menuToggle>
+          <button ion-button icon-only color="royal">
+            <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+          </button>
+        </ion-buttons>
     <ion-title>Submit New Leave</ion-title>
   </ion-navbar>
 
@@ -15,9 +20,9 @@
             <ion-select name="type" 
             ngModel
             required>
-              <ion-option value="Annual">Annual Leave</ion-option>
-              <ion-option value="Sick">Sick Leave</ion-option>
-              <ion-option value="Haj">Haj Leave</ion-option>
+              <ion-option value="Annual Leave">Annual Leave</ion-option>
+              <ion-option value="Sick Leave">Sick Leave</ion-option>
+              <ion-option value="Haj Leave">Haj Leave</ion-option>
             </ion-select>
           </ion-item>
       <ion-item>

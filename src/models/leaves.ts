@@ -1,3 +1,3 @@
 export class Leave{
-    constructor(public type: String, public startDate:Date,public endDate:Date){}
+    constructor(public type: String, public startDate:Date,public endDate:Date,public duration:number){}
 }

@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Gulf Bank HR Portal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #f="ngForm" (ngSubmit)="onLogin(f)">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Employee Number</ion-label>
+        <ion-input type="number" ngModel name="empNo" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="password" ngModel name="password" required></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block type="submit" [disabled]="!f.valid">LOGIN</button>
+  </form>
+</ion-content>
