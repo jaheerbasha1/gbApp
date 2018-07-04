@@ -3,7 +3,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
 import { NewsPage } from '../news/news';
 //import { AuthService } from '../services/auth';
-//import { HTTP } from '@ionic-native/http';
+import { HTTP } from '@ionic-native/http';
 
 
 @IonicPage()
@@ -12,14 +12,14 @@ import { NewsPage } from '../news/news';
   templateUrl: 'signin.html',
 })
 export class SigninPage {
-  constructor(public navCtrl:NavController,/*private http:HTTP,private authService:AuthService*/){}
+  constructor(public navCtrl:NavController,private http:HTTP/*,private authService:AuthService*/){}
 
 
   onLogin(form:NgForm){
 console.log(form.value);
 this.navCtrl.push(NewsPage);
 //this.authService.login();
-/*this.http.get('http://localhost:8090/data/', {}, {})
+this.http.get('http://192.168.1.150:8090/data/'+form.value.empNo, {}, {})
 .then(data => {
 
   console.log(data.status);
@@ -33,7 +33,7 @@ this.navCtrl.push(NewsPage);
   console.log(error.error); // error message as string
   console.log(error.headers);
 
-});*/
+});
 //console.log(this.http.getBasicAuthHeader('800777','Amsgul@837'));
   }
 }
