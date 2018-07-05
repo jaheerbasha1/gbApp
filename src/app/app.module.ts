@@ -15,6 +15,9 @@ import { LeavetabsPage } from '../pages/leavetabs/leavetabs';
 import { LeaveHistoryService } from '../pages/services/leaveHistory';
 import { SigninPage } from '../pages/signin/signin';
 import { AuthService } from '../pages/services/auth';
+import { TaPage } from '../pages/ta/ta';
+import { PayslipPage } from '../pages/payslip/payslip';
+import { CoePage } from '../pages/coe/coe';
 
 
 @NgModule({
@@ -26,7 +29,11 @@ import { AuthService } from '../pages/services/auth';
     LeavehistoryPage,
     NewleavePage,
     LeavetabsPage,
-    SigninPage
+    SigninPage,
+    TaPage,
+    PayslipPage,
+    CoePage
+
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,10 @@ import { AuthService } from '../pages/services/auth';
     LeavehistoryPage,
     NewleavePage,
     LeavetabsPage,
-    SigninPage
+    SigninPage,
+    TaPage,
+    PayslipPage,
+    CoePage
   ],
   providers: [
     StatusBar,

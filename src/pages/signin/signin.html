@@ -8,17 +8,23 @@
 
 
 <ion-content padding>
-  <form #f="ngForm" (ngSubmit)="onLogin(f)">
-    <ion-list>
-      <ion-item>
-        <ion-label fixed>Employee Number</ion-label>
-        <ion-input type="number" ngModel name="empNo" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label fixed>Password</ion-label>
-        <ion-input type="password" ngModel name="password" required></ion-input>
-      </ion-item>
-    </ion-list>
-    <button ion-button block type="submit" [disabled]="!f.valid">LOGIN</button>
-  </form>
+  <ion-img class="img" src="/assets/imgs/gulf logo.png"></ion-img>
+  <ion-card>
+
+    <ion-card-content>
+      <ion-list>
+        <form #f="ngForm" (ngSubmit)="onLogin(f)">
+          <ion-item>
+
+            <ion-input class="my-label" type="text" ngModel name="empNo" required placeholder="Employee Number"></ion-input>>
+          </ion-item>
+          <ion-item>
+
+            <ion-input class="my-label" type="password" ngModel name="password" required placeholder="Password"></ion-input>
+          </ion-item>
+          <button ion-button round full="true" type="submit" [disabled]="!f.valid">LOGIN</button>
+        </form>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

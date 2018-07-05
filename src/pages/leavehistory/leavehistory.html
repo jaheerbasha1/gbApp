@@ -16,9 +16,12 @@
 <ion-content padding>
 <ion-list>
   <ion-item *ngFor="let item of listItems">
-    <h3>
-     {{item.type}}, - Duration: {{item.duration}}
-    </h3>
+    <h2>
+     {{item.type}} 
+    </h2>
+    <p>Duration: {{item.duration}}</p>
+    <p>Start Date: {{item.startDate}}</p>
+    <p>Start Date: {{item.endDate}}</p>
   </ion-item>
 </ion-list>
 </ion-content>

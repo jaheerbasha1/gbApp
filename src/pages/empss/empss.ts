@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LeavetabsPage } from '../leavetabs/leavetabs';
-
-/**
- * Generated class for the EmpssPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PayslipPage } from '../payslip/payslip';
+import { TaPage } from '../ta/ta';
+import { CoePage } from '../coe/coe';
 
 @IonicPage()
 @Component({
@@ -30,6 +26,22 @@ export class EmpssPage {
 ];
 itemSelected(item: string) {
   console.log("Selected Item", item);
-  this.navCtrl.push(LeavetabsPage);
-}
+  let selc: String = item;
+  if(selc=='View Payslip'){
+    console.log("inside payslip");
+    this.navCtrl.push(PayslipPage);
+  }
+  if(selc=='Time Attendance'){
+    console.log("inside ta");
+    this.navCtrl.push(TaPage);    
+  }
+  if(selc=='Apply Leave'){
+    console.log("inside leave");
+    this.navCtrl.push(LeavetabsPage);    
+  }
+  if(selc=='Code of Ethics'){
+    console.log("inside coe");
+    this.navCtrl.push(CoePage);    
+  }
+  }
 }

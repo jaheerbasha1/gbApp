@@ -11,12 +11,14 @@ import { LeaveHistoryService } from '../services/leaveHistory';
 })
 export class LeavehistoryPage {
   listItems: Leave[];
+  
 
   constructor(private nlService: LeaveHistoryService) {
   }
 
   ionViewWillEnter() {
     this.loadItems();
+    //this.nlService.newLeave('Annual Leave','01-December-2017','01-Dec-2017','1');
   }
 
   ionViewDidLoad() {
