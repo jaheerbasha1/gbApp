@@ -18,6 +18,7 @@ import { AuthService } from '../pages/services/auth';
 import { TaPage } from '../pages/ta/ta';
 import { PayslipPage } from '../pages/payslip/payslip';
 import { CoePage } from '../pages/coe/coe';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { CoePage } from '../pages/coe/coe';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

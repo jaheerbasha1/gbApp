@@ -19,11 +19,12 @@ export class EmpssPage {
     console.log('ionViewDidLoad EmpssPage');
   }
   items = [
-    'View Payslip',
-    'Apply Leave',
-    'Time Attendance',
-    'Code of Ethics',
+    {title:'View Payslip',icon:'cash'},
+    {title:'Apply Leave',icon:'plane'},
+    {title:'Time Attendance',icon:'time'},
+    {title:'Code of Ethics',icon:'book'},
 ];
+
 itemSelected(item: string) {
   console.log("Selected Item", item);
   let selc: String = item;

@@ -16,16 +16,24 @@ export class SigninPage {
 
 
   onLogin(form:NgForm){
-console.log(form.value);
-this.navCtrl.push(NewsPage);
-//this.authService.login();
-this.http.get('http://192.168.1.150:8090/data/'+form.value.empNo, {}, {})
-.then(data => {
 
+console.log(form.value);
+this.navCtrl.push(NewsPage);//needs to be removed
+
+//this.authService.login();
+this.http.get('http://192.168.1.150:8090/data/'+form.value.empNo+'/'+form.value.password, {}, {})
+.then(data => {
+  
   console.log(data.status);
   console.log(data.data); // data received by server
   console.log(data.headers);
-
+  let response: String = data.data;
+  if(response=='true'){
+    this.navCtrl.push(NewsPage);
+  }else{
+    console.log(data.data); // data received by server
+  }
+  
 })
 .catch(error => {
 
@@ -34,6 +42,5 @@ this.http.get('http://192.168.1.150:8090/data/'+form.value.empNo, {}, {})
   console.log(error.headers);
 
 });
-//console.log(this.http.getBasicAuthHeader('800777','Amsgul@837'));
   }
 }

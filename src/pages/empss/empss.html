@@ -23,8 +23,9 @@
 
 <ion-content >
     <ion-list inset>
-        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-          {{ item }}
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item.title)">
+            <ion-icon name={{item.icon}}></ion-icon>
+          {{ item.title }}
         </button>
     </ion-list>
 
