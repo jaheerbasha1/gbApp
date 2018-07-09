@@ -1,12 +1,11 @@
-
 <ion-header>
 
   <ion-navbar>
-      <ion-buttons left menuToggle>
-          <button ion-button icon-only color="royal">
-            <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
-          </button>
-        </ion-buttons>
+    <ion-buttons left menuToggle>
+      <button ion-button icon-only color="royal">
+        <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Leave History</ion-title>
   </ion-navbar>
 
@@ -14,14 +13,49 @@
 
 
 <ion-content padding>
-<ion-list>
-  <ion-item *ngFor="let item of listItems">
-    <h2>
-     {{item.type}} 
-    </h2>
-    <p>Duration: {{item.duration}}</p>
-    <p>Start Date: {{item.startDate}}</p>
-    <p>Start Date: {{item.endDate}}</p>
-  </ion-item>
-</ion-list>
+  <ion-list>
+    <ion-list-header>
+      Pending Leaves
+    </ion-list-header>
+    <ion-item *ngFor="let item of listItems">
+      <h3>
+        {{item.type}}
+      </h3>
+      <p>Duration: {{item.duration}}</p>
+      <p>Start Date: {{item.startDate}}</p>
+      <p>Start Date: {{item.endDate}}</p>
+    </ion-item>
+
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Leave History
+    </ion-list-header>
+    <ion-item>
+      <h3>
+        Annual Leave
+      </h3>
+      <p>Duration: 3</p>
+      <p>Start Date: 2018-05-01</p>
+      <p>Start Date: 2018-05-03</p>
+    </ion-item>
+    <ion-item>
+      <h3>
+        Sick Leave
+      </h3>
+      <p>Duration: 16</p>
+      <p>Start Date: 2018-01-01</p>
+      <p>Start Date: 2018-01-15</p>
+    </ion-item>
+    <ion-item>
+      <h3>
+        Unpaid Leave
+      </h3>
+      <p>Duration: 26</p>
+      <p>Start Date: 2017-08-01</p>
+      <p>Start Date: 2018-08-25</p>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>

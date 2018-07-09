@@ -1,18 +1,58 @@
-<!--
-  Generated template for the CoePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>coe</ion-title>
+
+    <ion-title>Code of Ethics</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+  <div>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+        English
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        عربي
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 
+  <div [ngSwitch]="pet" padding>
+    <h3 *ngSwitchCase="'puppies'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'puppies'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+    <h3 *ngSwitchCase="'puppies'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'puppies'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+    <h3 *ngSwitchCase="'puppies'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'puppies'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+
+
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-item>
+        <ion-thumbnail item-start>
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+    
+  </div>
 </ion-content>

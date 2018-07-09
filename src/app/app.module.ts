@@ -33,9 +33,7 @@ import { IonicStorageModule } from '@ionic/storage';
     SigninPage,
     TaPage,
     PayslipPage,
-    CoePage
-
-  ],
+    CoePage  ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -53,8 +51,7 @@ import { IonicStorageModule } from '@ionic/storage';
     SigninPage,
     TaPage,
     PayslipPage,
-    CoePage
-  ],
+    CoePage  ],
   providers: [
     StatusBar,
     SplashScreen,
