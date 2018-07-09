@@ -19,6 +19,7 @@ import { TaPage } from '../pages/ta/ta';
 import { PayslipPage } from '../pages/payslip/payslip';
 import { CoePage } from '../pages/coe/coe';
 import { IonicStorageModule } from '@ionic/storage';
+import { MgrActionsPage } from '../pages/mgr-actions/mgr-actions';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { IonicStorageModule } from '@ionic/storage';
     SigninPage,
     TaPage,
     PayslipPage,
-    CoePage  ],
+    CoePage,
+    MgrActionsPage  
+  ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -51,7 +54,8 @@ import { IonicStorageModule } from '@ionic/storage';
     SigninPage,
     TaPage,
     PayslipPage,
-    CoePage  ],
+    CoePage,
+    MgrActionsPage  ],
   providers: [
     StatusBar,
     SplashScreen,

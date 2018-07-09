@@ -1,0 +1,21 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pending Actions</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list >
+      <ion-list-header>
+          Leaves Requests
+        </ion-list-header>
+    <ion-item *ngFor="let item of items" >
+      {{ item.title }}
+      <p>Name: {{item.name}}</p>
+      <p>Start Date: {{item.startDate}}</p>
+      <p>End Date: {{item.endDate}}</p>
+          <button ion-button round start full="true"  color="gbgreen">Approve</button>
+          <button ion-button round end full="true"  right>Reject</button>
+    </ion-item>
+</ion-list>
+</ion-content>

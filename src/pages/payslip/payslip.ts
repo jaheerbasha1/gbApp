@@ -33,6 +33,7 @@ export class PayslipPage {
   ];
 
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad PayslipPage');
   }
 
