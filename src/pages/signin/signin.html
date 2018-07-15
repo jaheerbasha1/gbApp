@@ -3,12 +3,12 @@
     <ion-title>Gulf Bank HR Portal</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding> 
+<ion-content padding>
   <ion-card>
     <ion-card-content>
-        <div text-center padding>
-            <img src="assets/imgs/GB Logo.png" />
-         </div>
+      <div text-center padding>
+        <img src="assets/imgs/GB Logo.png"/>
+      </div>
       <ion-list>
         <form #f="ngForm" (ngSubmit)="onLogin(f)">
           <ion-item>
@@ -18,7 +18,8 @@
             <ion-input class="my-label" type="password" ngModel name="password" required placeholder="Password"></ion-input>
           </ion-item>
           <button ion-button round full="true" type="submit" [disabled]="!f.valid">LOGIN</button>
-        </form>      </ion-list>
+        </form>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

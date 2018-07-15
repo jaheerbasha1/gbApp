@@ -20,6 +20,8 @@ import { PayslipPage } from '../pages/payslip/payslip';
 import { CoePage } from '../pages/coe/coe';
 import { IonicStorageModule } from '@ionic/storage';
 import { MgrActionsPage } from '../pages/mgr-actions/mgr-actions';
+import { IachatPage } from '../pages/iachat/iachat';
+import { ReportelistPage } from '../pages/reportelist/reportelist';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { MgrActionsPage } from '../pages/mgr-actions/mgr-actions';
     TaPage,
     PayslipPage,
     CoePage,
-    MgrActionsPage  
+    MgrActionsPage,
+    IachatPage,
+    ReportelistPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,8 @@ import { MgrActionsPage } from '../pages/mgr-actions/mgr-actions';
     TaPage,
     PayslipPage,
     CoePage,
-    MgrActionsPage  ],
+    MgrActionsPage,IachatPage,
+    ReportelistPage  ],
   providers: [
     StatusBar,
     SplashScreen,

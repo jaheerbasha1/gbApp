@@ -1,12 +1,13 @@
 <ion-header>
 
   <ion-navbar>
-      <ion-buttons left menuToggle>
-          <button ion-button icon-only color="royal">
-            <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
-          </button>
-        </ion-buttons>
+    <ion-buttons left menuToggle>
+      <button ion-button icon-only color="royal">
+        <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Submit New Leave</ion-title>
+
   </ion-navbar>
 
 </ion-header>
@@ -15,16 +16,14 @@
 <ion-content padding>
   <form #f="ngForm" (ngSubmit)="onAddLeave(f)">
     <ion-list>
-        <ion-item>
-            <ion-label>Leave Type</ion-label>
-            <ion-select name="type" 
-            ngModel
-            required>
-              <ion-option value="Annual Leave">Annual Leave</ion-option>
-              <ion-option value="Sick Leave">Sick Leave</ion-option>
-              <ion-option value="Haj Leave">Haj Leave</ion-option>
-            </ion-select>
-          </ion-item>
+      <ion-item>
+        <ion-label>Leave Type</ion-label>
+        <ion-select name="type" ngModel required>
+          <ion-option value="Annual Leave">Annual Leave</ion-option>
+          <ion-option value="Sick Leave">Sick Leave</ion-option>
+          <ion-option value="Haj Leave">Haj Leave</ion-option>
+        </ion-select>
+      </ion-item>
       <ion-item>
         <ion-label fixed>Start Date</ion-label>
         <ion-datetime ngModel required displayFormat="DD MMM YYYY" name="startDate"></ion-datetime>
@@ -34,13 +33,7 @@
         <ion-datetime ngModel required displayFormat="DD MMM YYYY" name="endDate"></ion-datetime>
       </ion-item>
     </ion-list>
-    <button ion-button 
-    color="gbred" 
-    type="submit"
-    round
-    [disabled]="!f.valid">Submit Leave</button>
-    <button ion-button 
-    color="gbred" 
-    round>Cancel</button>
+    <button ion-button color="gbred" type="submit" round [disabled]="!f.valid">Submit Leave</button>
+    <button ion-button color="gbred" round>Cancel</button>
   </form>
 </ion-content>

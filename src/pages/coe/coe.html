@@ -9,50 +9,70 @@
 
 <ion-content padding>
   <div>
-    <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="kittens">
+    <ion-segment [(ngModel)]="coe">
+      <ion-segment-button value="english">
         English
       </ion-segment-button>
-      <ion-segment-button value="puppies">
+      <ion-segment-button value="arabic">
         عربي
       </ion-segment-button>
     </ion-segment>
   </div>
 
-  <div [ngSwitch]="pet" padding>
-    <h3 *ngSwitchCase="'puppies'">
+  <div [ngSwitch]="coe" padding>
+    <h3 *ngSwitchCase="'arabic'">
       Header header Header
     </h3>
-    <p *ngSwitchCase="'puppies'">
+    <p *ngSwitchCase="'arabic'">
       text text text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text
     </p>
-    <h3 *ngSwitchCase="'puppies'">
+    <h3 *ngSwitchCase="'arabic'">
       Header header Header
     </h3>
-    <p *ngSwitchCase="'puppies'">
+    <p *ngSwitchCase="'arabic'">
       text text text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text
     </p>
-    <h3 *ngSwitchCase="'puppies'">
+    <h3 *ngSwitchCase="'arabic'">
       Header header Header
     </h3>
-    <p *ngSwitchCase="'puppies'">
+    <p *ngSwitchCase="'arabic'">
       text text text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text text text text text text text text text text text text text text text text text text
       text text text text text text
     </p>
 
 
-    <ion-list *ngSwitchCase="'kittens'">
-      <ion-item>
-        <ion-thumbnail item-start>
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-    </ion-list>
-    
+    <h3 *ngSwitchCase="'english'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'english'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+    <h3 *ngSwitchCase="'english'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'english'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+    <h3 *ngSwitchCase="'english'">
+      Header header Header
+    </h3>
+    <p *ngSwitchCase="'english'">
+      text text text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text text text text text text text text text text text text text text text text text text
+      text text text text text text
+    </p>
+
   </div>
+  <ion-buttons>
+    <button ion-button round full>Sign off</button>
+  </ion-buttons>
 </ion-content>

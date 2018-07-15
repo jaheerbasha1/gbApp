@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { IachatPage } from '../iachat/iachat';
 
 /**
- * Generated class for the NewsPage page.
+ * Generated class for the IachatPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { IachatPage } from '../iachat/iachat';
 
 @IonicPage()
 @Component({
-  selector: 'page-news',
-  templateUrl: 'news.html',
+  selector: 'page-iachat',
+  templateUrl: 'iachat.html',
 })
-export class NewsPage {
+export class IachatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NewsPage');
+    console.log('ionViewDidLoad IachatPage');
   }
-  goToIA(){
-    this.navCtrl.push(IachatPage);
-  }
+
 }
