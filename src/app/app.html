@@ -12,11 +12,15 @@
         </ion-toolbar>
 
     </ion-header>
-    <ion-content>
-        <ion-list>
-            <button ion-item icon-left (click)="onLoad(newsPage)">
+    <ion-content >
+        <ion-list >
+            <button ion-item icon-left (click)="onLoad(newsPage)" >
                 <ion-icon ios="ios-bookmark" md="md-bookmark"></ion-icon>
                 Announcements
+            </button>
+            <button ion-item icon-left (click)="onLoad(offersPage)">
+                <ion-icon ios="ios-pricetags" md="md-pricetags"></ion-icon>
+                Staff Offers
             </button>
             <button ion-item icon-left (click)="onLoad(empssPage)">
                 <ion-icon name="person"></ion-icon>

@@ -7,6 +7,7 @@ import { MgrssPage } from '../pages/mgrss/mgrss';
 import { EmpssPage } from '../pages/empss/empss';
 import { NewsPage } from '../pages/news/news';
 import { SigninPage } from '../pages/signin/signin';
+import { OffersPage } from '../pages/offers/offers';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,6 +18,7 @@ export class MyApp {
   empssPage=EmpssPage;
   newsPage=NewsPage;
   signinPage=SigninPage;
+  offersPage=OffersPage;
   @ViewChild('nav') nav:NavController;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private menuCtrl: MenuController) {
