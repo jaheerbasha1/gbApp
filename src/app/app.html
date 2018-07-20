@@ -1,7 +1,7 @@
 <ion-menu [content]="nav">
     <ion-header>
         <ion-toolbar>
-            <ion-title>
+            <ion-title text-center>
                 Menu
             </ion-title>
             <ion-buttons end>
@@ -15,20 +15,21 @@
     <ion-content >
         <ion-list >
             <button ion-item icon-left (click)="onLoad(newsPage)" >
-                <ion-icon ios="ios-bookmark" md="md-bookmark"></ion-icon>
+                <ion-icon ios="ios-bookmark" md="md-bookmark" small></ion-icon>
                 Announcements
             </button>
-            <button ion-item icon-left (click)="onLoad(offersPage)">
-                <ion-icon ios="ios-pricetags" md="md-pricetags"></ion-icon>
+            <button ion-item icon-left (click)="onLoad(offersPage)" >
+                <ion-icon ios="ios-pricetags" md="md-pricetags" small></ion-icon>
                 Staff Offers
             </button>
-            <button ion-item icon-left (click)="onLoad(empssPage)">
-                <ion-icon name="person"></ion-icon>
+            <button ion-item icon-left (click)="onLoad(empssPage)" >
+                <ion-icon ios="ios-person" md="md-person" small></ion-icon>
                 Employee Self Service
             </button>
-            <button ion-item icon-left (click)="onLoad(mgrssPage)">
-                <ion-icon name="people"></ion-icon>
+            <button ion-item icon-left (click)="onLoad(mgrssPage)" >
+                <ion-icon ios="ios-people" md="md-people" small></ion-icon>
                 Manager Self Service
+                <ion-badge item-end color="gbred">2</ion-badge>
             </button>
         </ion-list>
     </ion-content>

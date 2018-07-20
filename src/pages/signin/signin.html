@@ -1,9 +1,9 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Gulf Bank HR Portal</ion-title>
+    <ion-title text-center>Gulf Bank HR Portal</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+<ion-content scroll="false">
   <ion-card>
     <ion-card-content>
       <div text-center padding>
@@ -15,11 +15,21 @@
             <ion-input class="my-label" type="text" ngModel name="empNo" required placeholder="Employee Number"></ion-input>>
           </ion-item>
           <ion-item>
-            <ion-input class="my-label" type="password" ngModel name="password" required placeholder="Password"></ion-input>
+            <ion-input class="my-label" type="password" ngModel name="password" required placeholder="Password" ></ion-input>
           </ion-item>
           <button ion-button round full="true" type="submit" [disabled]="!f.valid">LOGIN</button>
         </form>
+        <button ion-button full="true" color="dark" clear text-center>Reset Password</button>
       </ion-list>
+      
     </ion-card-content>
+    
   </ion-card>
+  <p padding>* This Mobile Application is for Gulf Bank Employees only.</p>
+
+
 </ion-content>
+<ion-footer class="bar-footer" no-border>
+    <div class="splash-bg" ></div>
+  </ion-footer>
+  

@@ -1,10 +1,39 @@
 page-signin {
-    .my-label {
-        font-size: 15px;
-      }
-      .img{
-        
-        margin: auto;
-        //display: block;
-      }
+  .splash-bg {
+    position: bottom;
+    //margin: 0px;
+    //background-position: 185px 428px;
+    //background-size: 50px 50px;
+    //padding: 10px;
+    background: url('../assets/imgs/footer-city.png') no-repeat transparent;
+    //background-size: cover;
+    height: 100%;
+    //z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 20s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+  .my-label {
+    font-size: 15px;
+    margin: auto;
+  }
+  .img{
+    
+    margin: auto;
+    //display: block;
+  }
+  .splash-logo {
+    margin: auto;
+    background: url('../assets/imgs/logo.png') repeat transparent;
+    background-size: 100%;
+    width: 128px;
+    height: 128px;
+  }
+  .bar-footer{
+    height:120px;
+    }
 }
