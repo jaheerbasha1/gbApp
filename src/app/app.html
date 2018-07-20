@@ -12,25 +12,33 @@
         </ion-toolbar>
 
     </ion-header>
-    <ion-content >
-        <ion-list >
-            <button ion-item icon-left (click)="onLoad(newsPage)" >
+    <ion-content>
+        <ion-list>
+            <button ion-item icon-left (click)="onLoad(newsPage)">
                 <ion-icon ios="ios-bookmark" md="md-bookmark" small></ion-icon>
                 Announcements
             </button>
-            <button ion-item icon-left (click)="onLoad(offersPage)" >
+            <button ion-item icon-left (click)="onLoad(offersPage)">
                 <ion-icon ios="ios-pricetags" md="md-pricetags" small></ion-icon>
                 Staff Offers
             </button>
-            <button ion-item icon-left (click)="onLoad(empssPage)" >
+            <button ion-item icon-left (click)="onLoad(empssPage)">
                 <ion-icon ios="ios-person" md="md-person" small></ion-icon>
                 Employee Self Service
             </button>
-            <button ion-item icon-left (click)="onLoad(mgrssPage)" >
+            <button ion-item icon-left (click)="onLoad(mgrssPage)">
                 <ion-icon ios="ios-people" md="md-people" small></ion-icon>
                 Manager Self Service
                 <ion-badge item-end color="gbred">2</ion-badge>
             </button>
+            <button ion-item icon-left (click)="onLoad(analyticsPage)">
+                <ion-icon ios="ios-analytics" md="md-analytics" small></ion-icon>
+                HR Analytics
+            </button>
+            <button ion-item icon-left (click)="onLoad(settingsPage)">
+                    <ion-icon ios="ios-settings" md="md-settings" small></ion-icon>
+                    App Settings
+                </button>
         </ion-list>
     </ion-content>
 </ion-menu>

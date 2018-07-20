@@ -8,6 +8,8 @@ import { EmpssPage } from '../pages/empss/empss';
 import { NewsPage } from '../pages/news/news';
 import { SigninPage } from '../pages/signin/signin';
 import { OffersPage } from '../pages/offers/offers';
+import { AnalyticsPage } from '../pages/analytics/analytics';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,6 +21,8 @@ export class MyApp {
   newsPage=NewsPage;
   signinPage=SigninPage;
   offersPage=OffersPage;
+  analyticsPage=AnalyticsPage;
+  settingsPage=SettingsPage;
   @ViewChild('nav') nav:NavController;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private menuCtrl: MenuController) {

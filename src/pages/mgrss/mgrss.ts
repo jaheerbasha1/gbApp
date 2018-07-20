@@ -24,7 +24,7 @@ export class MgrssPage {
     console.log('ionViewDidLoad MgrssPage');
   }
   items = [
-    'Subordinate Information',
+    'My Subordinates',
     'Pending Actions',
     'Delegation of Authority'
 ];
@@ -35,8 +35,8 @@ itemSelected(item: string) {
     console.log("inside Pending Actions");
     this.navCtrl.push(MgrActionsPage);
   }
-  if(selc=='Subordinate Information'){
-    console.log("inside Subordinate Information");
+  if(selc=='My Subordinates'){
+    console.log("inside My Subordinates");
     this.navCtrl.push(ReportelistPage);    
   }
   /*if(selc=='Apply Leave'){

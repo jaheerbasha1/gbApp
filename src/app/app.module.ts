@@ -23,6 +23,9 @@ import { MgrActionsPage } from '../pages/mgr-actions/mgr-actions';
 import { IachatPage } from '../pages/iachat/iachat';
 import { ReportelistPage } from '../pages/reportelist/reportelist';
 import { OffersPage } from '../pages/offers/offers';
+import { ChartsModule } from 'ng2-charts';
+import { AnalyticsPage } from '../pages/analytics/analytics';
+import { SettingsPage } from '../pages/settings/settings';
 
 
 @NgModule({
@@ -41,12 +44,15 @@ import { OffersPage } from '../pages/offers/offers';
     MgrActionsPage,
     IachatPage,
     ReportelistPage,
-    OffersPage
+    OffersPage,
+    AnalyticsPage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -61,14 +67,16 @@ import { OffersPage } from '../pages/offers/offers';
     TaPage,
     PayslipPage,
     CoePage,
-    MgrActionsPage,IachatPage,
+    MgrActionsPage, IachatPage,
     ReportelistPage,
-  OffersPage  ],
+    OffersPage,
+    AnalyticsPage,
+  SettingsPage],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LeaveHistoryService,HTTP,AuthService
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    LeaveHistoryService, HTTP, AuthService
   ]
 })
-export class AppModule {}
+export class AppModule { }
