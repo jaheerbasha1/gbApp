@@ -18,6 +18,7 @@
 
 
 <ion-content padding>
+    <h2 text-center>Kuwaitization</h2>
     <div class="row">
         <div class="col-md-6">
           <div style="display: block;">
@@ -33,4 +34,27 @@
           </div>
         </div>
       </div>
+      <h2 text-center>Attrition (%) Kuwaiti vs Overall</h2>
+      <div>
+          <div style="display: block">
+            <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType"
+                    (chartHover)="chartHovered1($event)"
+                    (chartClick)="chartClicked1($event)"></canvas>
+          </div>
+        </div>
+        <h2 text-center>Joiners Kuwaiti vs Non Kuwaiti</h2>
+
+        <div style="display: block">
+            <canvas baseChart
+                        [data]="doughnutChartData"
+                        [labels]="doughnutChartLabels"
+                        [chartType]="doughnutChartType"
+                        (chartHover)="chartHovered3($event)"
+                        (chartClick)="chartClicked3($event)"></canvas>
+          </div>
 </ion-content>

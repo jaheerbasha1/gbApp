@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AnalyticsPage {
   public lineChartData:Array<any> = [
-    {data: [66.3, 66.5, 66.7, 67, 68.1, 69.2, 70.1], label: 'Kuwaitization'},
+    {data: [66.3, 66.5, 66.7, 67, 68.1, 69.2, 70.1], label: 'Kuwaitization (%)'},
     /*{data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'},
     {data: [18, 48, 77, 9, 100, 27, 40], label: 'Series C'}*/
   ];
@@ -71,7 +71,61 @@ export class AnalyticsPage {
   public chartHovered(e:any):void {
     console.log(e);
   }
+  public barChartOptions:any = {
+    scaleShowVerticalLines: false,
+    responsive: true
+  };
+  public barChartLabels:string[] = ['2015', '2016', '2017', '2018'];
+  public barChartType:string = 'bar';
+  public barChartLegend:boolean = true;
+  
+  public barChartData:any[] = [
+    {data: [ 24, 19.3, 23.7, 19.2], label: 'Kuwaitis'},
+    {data: [ 19, 18.2, 20, 18.1], label: 'Overall'}
+  ];
+  
+  // events
+  public chartClicked1(e:any):void {
+    console.log(e);
+  }
+  
+  public chartHovered1(e:any):void {
+    console.log(e);
+  }
+  
+  public randomize1():void {
+    // Only Change 3 values
+    let data = [
+      Math.round(Math.random() * 100),
+      59,
+      80,
+      (Math.random() * 100),
+      56,
+      (Math.random() * 100),
+      40];
+    let clone = JSON.parse(JSON.stringify(this.barChartData));
+    clone[0].data = data;
+    this.barChartData = clone;
+    /**
+     * (My guess), for Angular to recognize the change in the dataset
+     * it has to change the dataset variable directly,
+     * so one way around it, is to clone the data, change it and then
+     * assign it;
+     */
+  }
+  // Doughnut
+public doughnutChartLabels:string[] = ['Kuwaiti', 'Non Kuwaiti'];
+public doughnutChartData:number[] = [145, 30];
+public doughnutChartType:string = 'doughnut';
 
+// events
+public chartClicked2(e:any):void {
+  console.log(e);
+}
+
+public chartHovered2(e:any):void {
+  console.log(e);
+}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
