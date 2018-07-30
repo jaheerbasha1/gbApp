@@ -10,6 +10,7 @@ import { SigninPage } from '../pages/signin/signin';
 import { OffersPage } from '../pages/offers/offers';
 import { AnalyticsPage } from '../pages/analytics/analytics';
 import { SettingsPage } from '../pages/settings/settings';
+import { SdeskPage } from '../pages/sdesk/sdesk';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,6 +24,7 @@ export class MyApp {
   offersPage=OffersPage;
   analyticsPage=AnalyticsPage;
   settingsPage=SettingsPage;
+  sdeskPage=SdeskPage;
   @ViewChild('nav') nav:NavController;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private menuCtrl: MenuController) {

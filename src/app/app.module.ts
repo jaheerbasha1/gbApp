@@ -26,6 +26,7 @@ import { OffersPage } from '../pages/offers/offers';
 import { ChartsModule } from 'ng2-charts';
 import { AnalyticsPage } from '../pages/analytics/analytics';
 import { SettingsPage } from '../pages/settings/settings';
+import { SdeskPage } from '../pages/sdesk/sdesk';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { SettingsPage } from '../pages/settings/settings';
     ReportelistPage,
     OffersPage,
     AnalyticsPage,
-    SettingsPage
+    SettingsPage,
+    SdeskPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ import { SettingsPage } from '../pages/settings/settings';
     ReportelistPage,
     OffersPage,
     AnalyticsPage,
-  SettingsPage],
+  SettingsPage,
+SdeskPage],
   providers: [
     StatusBar,
     SplashScreen,
