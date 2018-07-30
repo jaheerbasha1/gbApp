@@ -1,10 +1,14 @@
-//import { HTTP } from '@ionic-native/http';
+import { Injectable } from '@angular/core';
+import { HTTP } from '@ionic-native/http';
 
-
+@Injectable()
 export class AuthService{
-//constructor(private http:HTTP){}
-    login(){
-    /*    this.http.get('http://192.168.1.150/user', {}, {})
+  datas: any;
+constructor(private http: HTTP) {
+  this.datas = null;
+}
+    login(empNo:number,password:string){
+       this.http.get('http://62.215.144.83/data/'+empNo+'/'+password, {}, {})
         .then(data => {
       
           console.log(data.status);
@@ -18,9 +22,6 @@ export class AuthService{
           console.log(error.error); // error message as string
           console.log(error.headers);
       
-        });*/
-    }
-    logout(){
-
+        });
     }
 }
