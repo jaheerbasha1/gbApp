@@ -5,7 +5,7 @@ import { HTTP } from '@ionic-native/http';
 export class AuthService{
   datas: any;
 constructor(private http: HTTP) {
-  this.datas = null;
+  this.datas = null
 }
     login(empNo:number,password:string){
        this.http.get('http://62.215.144.83/data/'+empNo+'/'+password, {}, {})
