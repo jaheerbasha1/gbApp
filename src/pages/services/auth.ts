@@ -9,7 +9,7 @@ constructor(private http: HTTP) {
 }
 
     login(empNo:number,password:string){
-      //this.http.enableSSLPinning
+      //this.http.enableSSLPinning;
        this.http.get('http://10.106.144.115:8080/data', {}, {})
         .then(data => {
       
