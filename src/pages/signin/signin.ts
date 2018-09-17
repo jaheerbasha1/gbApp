@@ -24,6 +24,7 @@ console.log(form.value);
 
 this.authService.login(form.value.empNo,form.value.password);
 this.navCtrl.push(NewsPage);//needs to be removed
+this.authService.login(800555,"tstt");
 /*this.http.get('http://192.168.1.150:8090/data/'+form.value.empNo+'/'+form.value.password, {}, {})
 .then(data => {
   

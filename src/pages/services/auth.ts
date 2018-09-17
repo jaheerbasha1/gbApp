@@ -7,8 +7,10 @@ export class AuthService{
 constructor(private http: HTTP) {
   this.datas = null
 }
+
     login(empNo:number,password:string){
-       this.http.get('http://62.215.144.83/data/'+empNo+'/'+password, {}, {})
+      //this.http.enableSSLPinning
+       this.http.get('http://10.106.144.115:8080/data', {}, {})
         .then(data => {
       
           console.log(data.status);
